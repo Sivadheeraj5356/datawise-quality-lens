@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Datawise Quality Lens</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="hero">
+    <section class="panel intro">
+      <p class="eyebrow">Datawise workflow concept</p>
+      <h1>Data quality lens</h1>
+      <p class="lede">Inspect JSON or CSV records for missing values, duplicate keys, malformed emails and outliers before they become dashboards or AI features.</p>
+      <div class="badges"><span>Schema checks</span><span>Duplicate detection</span><span>Outlier review</span></div>
+    </section>
+    <section class="panel workspace">
+      <label for="dataInput">Dataset sample</label>
+      <textarea id="dataInput" spellcheck="false" placeholder='Paste a JSON array or CSV. Example: [{"id":"1","email":"user@example.com","revenue":1200}]'></textarea>
+      <div class="actions"><button id="inspectButton" type="button">Inspect quality</button></div>
+      <section id="results" class="results" aria-live="polite"><p class="empty-state">Paste JSON array or CSV rows to inspect data quality.</p></section>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
